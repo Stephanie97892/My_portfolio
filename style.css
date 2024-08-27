@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: "Montserrat", sans-serif;
+    
+}
+ 
+
+html {
+    overflow-y: scroll;    /* scroll bar to all pages  */
+}
+
+nav ul a {
+    font-size: 16px;
+    
+}
+
+
+
+/* image */
+/* .aigirl_img{
+    width: 400px;
+    opacity: 0.25;
+    margin-top: 20px;
+} */
+
+img {
+    max-width: 100%; /* Ensures images don't cause overflow */
+    height: auto;
+}
+
+
+/* LANDING PAGE NAME  */
+
+.my_name {
+    display: inline-flex; /* Allows wrapping but keeps the spans in line */
+    flex-wrap: wrap; /* Enables wrapping to the next line */
+    justify-content: center;    
+    
+}
+
+
+
+  
+.my_name span {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    opacity: 0;
+    animation: drop 0.8s ease-out forwards; /* Easing adjusted for smooth landing */
+    font-size: 90px;
+    text-transform: uppercase;
+}
+  
+.my_name span:nth-child(2) {
+    animation-delay: 0.3s; /* Slight delay for sequential landing */
+}
+  
+.my_name span:nth-child(3) {
+    animation-delay: 0.6s; /* Slight delay for sequential landing */
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 10; /* Fully visible */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .my_name span {
+        font-size: 60px; /* Adjust font size for smaller screens if needed */
+    }
+}
+
+
+
+.info_text{
+    font-size: 30px; 
+    text-align: center;
+    opacity: 0; /* Start invisible */
+    overflow: hidden; /* Prevents line breaks */
+    animation: fadeIn 5s forwards ease-in-out; /* Apply the fade-in effect */
+    color: #bcaaa4;
+
+}
+
+.tagline{
+    font-size: 30px; 
+    text-align: center;
+    opacity: 0; /* Start invisible */
+    overflow: hidden; /* Prevents line breaks */
+    animation: fadeIn 9s forwards ease-in-out; /* Apply the fade-in effect */
+
+}
+
+/* download button */
+.downloadresume{   
+    align-self: center; 
+    font-size: 20px;
+      
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.maincontainer {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    
+}
+
+.container {
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;    /*  centers text on landing page  */
+}
+
+.page-footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%; /* Ensures it spans the entire width */
+}
+
+.socialmediaicons {  
+    
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    align-self: center;
+    font-size: 25px;
+    position: relative;
+    margin-top: auto;
+   
+}
+
+.socialmediaicons i{
+    color: black;
+}
+
+/* All pages */
+
+.titles{
+    font-size:40px;
+    text-align: left;
+    opacity: 0;     
+    animation: fadeIn 1s forwards ease-in-out; /* Apply the fade-in effect */
+    text-transform: uppercase;
+
+
+}
+
+
+
+
+/* MY PROJECTS */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 406px; /* card sizes */
+    /* transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; */
+
+}  
+
+.card:hover {
+    box-shadow: 0 0 20px 10px rgba(199, 186, 186, 0.8); 
+    transform: scale(1.01); /* Slightly enlarges on hover */
+}
+
+    
+.card-action {
+    margin-top: auto; /* Pushes buttons to the bottom */
+}
+.card .card-title{
+    font-size: 20px; /* Change font size */
+    font-weight: 500;     
+    letter-spacing: 1px; /* Add some letter spacing */
+    text-transform: uppercase; /* Make text uppercase */
+    padding: 2px 27px!important;
+    border-radius: 3px;   
+    background-color:#bcaaa4;
+    color: rgb(0, 0, 0) !important;
+
+}
+
+
+.projects_img{
+    height: 200px;
+}
+
+.btn {
+    background-color: #555555; /* Dark gray */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease; 
+    margin-left: 10px;
+}
+
+.btn:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+}
+
+
+
+/* ABOUT ME */
+.paragraphs{
+    text-align: justify
+}
+
+.logos{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.interests{
+    font-size: 15px;
+}
+
+h2.titles{
+    font-size:30px;
+    text-align: left;
+    opacity: 0;     
+    animation: fadeIn 1s forwards ease-in-out; /* Apply the fade-in effect */
+    text-transform: uppercase;
+    
+
+
+}
+
+
+/*  CONTACT ME*/
+h2 .contact_me{
+    margin-top: 0px;
+}
+
+
+
