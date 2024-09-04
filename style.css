@@ -30,35 +30,56 @@ img {
     height: auto;
 }
 
+/* SWIRL DESIGN */
+/* .swirl_design{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    top:%;
+    transform: translateX(-50%); 
+    opacity: 0.25;
+    height: 200px;
+    z-index: 0; 
+    pointer-events: none; 
+    overflow-y: hidden;
+    
+  
+} */
+
+
 
 /* LANDING PAGE NAME  */
 
+
+.name_text{
+    text-align: center;
+}
+
 .my_name {
-    display: inline-flex; /* Allows wrapping but keeps the spans in line */
-    flex-wrap: wrap; /* Enables wrapping to the next line */
-    justify-content: center;    
+    display: inline-flex;    
     
+   
 }
 
 
 
   
 .my_name span {
-    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     opacity: 0;
-    animation: drop 0.8s ease-out forwards; /* Easing adjusted for smooth landing */
-    font-size: 90px;
+    animation: drop 0.8s ease-out forwards; /* smooth landing */
+    font-size: 60px;
     text-transform: uppercase;
+    
 }
   
 .my_name span:nth-child(2) {
-    animation-delay: 0.3s; /* Slight delay for sequential landing */
+    animation-delay: 0.3s; /* Slight delay */
 }
   
 .my_name span:nth-child(3) {
-    animation-delay: 0.6s; /* Slight delay for sequential landing */
+    animation-delay: 0.6s; 
 }
 
 @keyframes drop {
@@ -84,7 +105,7 @@ img {
 
 @media only screen and (max-width: 600px) {
     .my_name span {
-        font-size: 60px; /* Adjust font size for smaller screens if needed */
+        font-size: 50px; /* Adjust font size for smaller screens if needed */
     }
 }
 
@@ -135,8 +156,17 @@ html, body {
 .container {
     padding: 0;
     margin: 0 auto;
-    align-items: center;    /*  centers text on landing page  */
-}
+    align-items: center; 
+    /*  centers text on landing page  */
+
+    /* for swirl image */
+    position: relative;
+    z-index: 1;
+    overflow:visible; 
+  
+    
+    
+ }
 
 .page-footer {
     margin-top: auto; /* Pushes the footer to the bottom */
@@ -179,7 +209,7 @@ html, body {
 .card{
     display: flex;
     flex-direction: column;
-    height: 406px; /* card sizes */
+    height: 435px; /* card sizes */
     /* transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; */
 
 }  
@@ -190,6 +220,10 @@ html, body {
 }
 
     
+.card .card-content{
+    padding: 20px 20px 5px 20px;
+}
+
 .card-action {
     margin-top: auto; /* Pushes buttons to the bottom */
 }
@@ -208,6 +242,11 @@ html, body {
 
 .projects_img{
     height: 200px;
+}
+
+.techs img{
+    width: 30px;
+    margin-top: 15px;
 }
 
 .btn {
@@ -232,7 +271,7 @@ html, body {
 
 .logos{
     width: 50px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .interests{
